@@ -1,0 +1,27 @@
+Method: DeepGOPlus	Datasets: cafa3	 Ont: MF
+Fmax: 0.5493	 Smin: 0.4669	 AUPR: 0.6715	 ROCAUC: 0.9465 alpha:0.46
+Method: DeepGOPlus	Datasets: cafa3	 Ont: BP
+Fmax: 0.4589	 Smin: 0.5329	 AUPR: 0.5893	 ROCAUC: 0.9483 alpha:0.38
+Method: DeepGOPlus	Datasets: cafa3	 Ont: CC
+Fmax: 0.5841	 Smin: 0.5110	 AUPR: 0.7960	 ROCAUC: 0.9585 alpha:0.27
+
+Method: Naive	Datasets: cafa3	 Ont: MF
+Fmax: 0.4159	 Smin: 0.7361	 Aupr: 0.2364	 ROCAUC: 0.6334	alpha: 0.26
+Method: Naive	Datasets: cafa3	 Ont: BP
+Fmax: 0.3469     Smin: 0.7114    Aupr: 0.1701    ROCAUC: 0.6091 alpha:0.36
+Method: Naive	Datasets: cafa3	 Ont: CC
+Fmax: 0.5494	 Smin: 0.6395	 Aupr: 0.4013	 ROCAUC: 0.7583	alpha: 0.43
+
+Method: DiamondBLAST	Datasets: cafa3	 Ont: MF
+Fmax: 0.4495	 Smin: 0.9929	 Aupr: 0.3754	 ROCAUC: 0.7110	alpha: 0.6
+Method: DiamondBLAST	Datasets: cafa3	 Ont: BP
+Fmax: 0.3580	 Smin: 0.5676	 Aupr: 0.2715	 ROCAUC: 0.6867	alpha: 0.51
+Method: DiamondBLAST	Datasets: cafa3	 Ont: CC
+Fmax: 0.4674	 Smin: 0.5689	 Aupr: 0.3779	 ROCAUC: 0.7227	alpha: 0.64
+
+Method: Update+DiamondBlast	Datasets: cafa3	 Ont: MF
+Fmax: 0.5942	 Smin: 0.4249	 AUPR: 0.7265	 ROCAUC: 0.9677 alpha:0.33
+Method: Update+DiamondBlast	Datasets: cafa3	 Ont: CC
+Fmax: 0.6164	 Smin: 0.4975	 AUPR: 0.8107	 ROCAUC: 0.9602 alpha:0.09
+Method: DeepGOPlus	Datasets: cafa3	 Ont: BP
+Fmax: 0.5169	 Smin: 0.4790	 AUPR: 0.6334	 ROCAUC: 0.9561 alpha:0.22
