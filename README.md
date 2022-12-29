@@ -1,4 +1,4 @@
-# MMSMA and MMSMAPlus
+# MMSMAPlus
 
 This repository contains script which were used to build and train the MMSMAPlus model together with the scripts for evaluating the model's performance.
 
