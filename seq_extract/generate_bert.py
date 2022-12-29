@@ -58,14 +58,14 @@ def main(df_file='cafa3/test_df.pkl',save_dir='G:\Datasets\\cafa3\\test'):
         length_counter += len(sequence)
 
         if length_counter > max_chars or len(sequence) > max_chars / 2 or index == len(seq_dict) - 1:
-            # 将序列切割为字符列表
+            
             sentence_lists = [' '.join(seq) for _,seq in batch]
             seq_lists = [seq for _,seq in batch]
             runtime_error = False
-            # 对当前batch 中的序列进行 bert 编码
+            
             #######################  Batch-Processing #######################
             for batch_idx, (sample_id, seq) in enumerate(batch):  # for each seq in the batch
-                # 对当前序列token进行编码
+                
                 runtime_error = False
                 raw_seq = seq_lists[batch_idx]
                 seq_tokens = sentence_lists[batch_idx]
@@ -93,7 +93,7 @@ def main(df_file='cafa3/test_df.pkl',save_dir='G:\Datasets\\cafa3\\test'):
                     embedding = embedding.cpu().detach().numpy().squeeze()
                     embeddings = embedding[1:embedding.shape[0]-1]
 
-                # 若未运行超时 ，就将当前 embedding 保存下来
+          
                 if runtime_error == False:
                     try:
                         if verbose: print('Writing embeddings to: {}'.format(sample_id))
