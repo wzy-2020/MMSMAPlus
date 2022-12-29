@@ -67,12 +67,8 @@ def train(opt,net, criterion, train_loader, valid_loader,test_loader, ckpt_dir, 
         if valid_loss < lowest_valid_loss:
             best_epoch = epoch + 1
             lowest_valid_loss = valid_loss
-            torch.save(state, ckpt_dir + '/model_best.pth.tar')
-
-        if test_fmax > best_test_fmax:
-            best_epoch = epoch + 1
-            best_test_fmax = test_fmax
             torch.save(state, ckpt_dir + '/model_test.pth.tar')
+
 
         print("Epoch:[{}]\t Valid loss:{:.4f}\t Valid ROC AUC:{:.4f}\t Valid F-score:{:.4f}\tTest loss:{:.4f}\tTest F-score:{:.4f}".format(epoch+1,valid_loss,valid_auc,valid_fmax,test_loss,test_fmax),file=F_txt)
         F_txt.flush()
