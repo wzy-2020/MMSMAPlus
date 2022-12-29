@@ -43,7 +43,7 @@ Integrate homology-based  method prediction by running "evaluate_integrated.py".
 
 ## Contact
 
-If you have any suggestions or questions, please email me at 6201513051@stu.jiangnan.edu.cn.
+If you have any suggestions or questions, please email me at 6201613051@stu.jiangnan.edu.cn.
 
 
 
