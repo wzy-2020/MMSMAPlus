@@ -253,7 +253,7 @@ def MinMax(data):
     (height,width) = data.shape
     normalized_vector = np.zeros((height, width))
     for i in range(width):
-        # 按列取最大值最小值
+        
         maxValue, minValue = max(data[:, i]), min(data[:, i])
         try:
             normalized_vector[:, i] = (data[:, i] - minValue) / (maxValue - minValue)
@@ -325,7 +325,7 @@ def pass_config(device,args,opt):
 def read_pkl(pkl_path):
     f = open(pkl_path, 'rb')
     df = pickle.load(f)
-    # 全显示
+    
     # pd.set_option('display.width', None)
     # pd.set_option('display.max_rows', None)
     # pd.set_option('display.max_colwidth', None)
@@ -340,7 +340,7 @@ def read_list(list_path):
 def save_list(a_list,a_path):
     with open(a_path, 'w') as fin:
         fin.write('\n'.join(a_list))
-# 查看 mat矩阵文件
+
 def read_mat(mat_file):
     filepro =  scio.loadmat(mat_file)
     transmat = filepro['A']
@@ -431,7 +431,7 @@ def get_data(d, wind_size):
     for i in range(length):
         tmp = []
         for r in range(i - int(wind_size / 2), i + int(wind_size / 2) + 1):
-            # 当 win = 7 ， 时 前3行都为0
+         
             if r < 0:
                 tmp.extend(pader)
             elif r >= length:
