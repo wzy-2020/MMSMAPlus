@@ -57,7 +57,7 @@ def main(root_data_dir, datasets_name, ont):
 
     train_df = pd.read_pickle(train_data_file)
     test_df = pd.read_pickle(test_data_file)
-    test_df = test_df.loc[test_df['proteins'] == 'T100900008300']
+    # test_df = test_df.loc[test_df['proteins'] == 'T100900008300']
     print("Length of test set: " + str(len(test_df)))
     print("Length of terms: " + str(len(terms)))
     annotations = train_df['annotations'].values
