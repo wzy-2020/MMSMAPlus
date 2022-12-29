@@ -25,7 +25,7 @@ seq_extract/LM/bert ([GoogleDrive](https://drive.google.com/file/d/1HoUXtxqmz0SY
 To train CAFA3 with this repo:
 
 ```python
-python main.py
+python3 main.py
 ```
 
 The superparameters are set in the '**pser_args**' function of main.py, too.
