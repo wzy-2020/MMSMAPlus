@@ -31,5 +31,5 @@ python main.py
 The superparameters are set in the '**pser_args**' function of main.py, too.
 
 # Contact
-If you have any problem about our code, feel free to contact:6201613051@stu.jiangnan.edu.cn
+If you have any problem about our code, feel free to contact: 6201613051@stu.jiangnan.edu.cn
 
