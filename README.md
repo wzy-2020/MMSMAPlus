@@ -28,7 +28,7 @@ To train CAFA3 with this repo:
 python3 main.py
 ```
 
-The superparameters are set in the '**pser_args**' function of main.py, too.
+The hyperparameters are set in the '**pser_args**' function of main.py, too.
 
 
 
