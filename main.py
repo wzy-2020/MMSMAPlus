@@ -56,7 +56,7 @@ def main(**kwargs):
     logger_file = "models/" +args.datasets+"/"+ args.namespace.upper() + "/{}_{}_{}_{}_result.txt".format(args.datasets,args.namespace.upper(),args.net_type,args.feats_type)
     F_txt = open(logger_file, "a+")
 
-    # 网络初始化
+    # Init network
     if args.net_type == "DeepGOCNN":
         net = CNN1D_DeepGoPlus(input_dim=input_dim, num_filters=16 * [512],num_classes=num_classes).to(device)
 
@@ -69,7 +69,7 @@ def main(**kwargs):
     print("[*] Number of model parameters: ",sum(p.numel() for p in net.parameters() if p.requires_grad),file=F_txt)
 
     print(net)
-    # 处理 2 D
+    
     train_set = CNN1DDataset(df=train_df, feats_dir=args.feats_dir, terms_dict=terms_dict, feats_type=args.feats_type)
     train_loader = pyDataLoader(train_set, batch_size=args.batch_size, shuffle=True,
                                 collate_fn=cnn1d_collate)
@@ -96,7 +96,7 @@ def main(**kwargs):
         train(opt=opt, net=net, criterion=criterion, train_loader=train_loader, valid_loader=valid_loader, test_loader=test_loader,ckpt_dir=ckpt_dir,
                             F_txt=F_txt)
 
-    # 取峰值模型
+    # Testing
     model_fmax = []
     model_list = ['test']
     train_df = pd.concat([train_df, valid_df], ignore_index=True)
