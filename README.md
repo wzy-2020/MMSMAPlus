@@ -48,7 +48,6 @@ Integrate homology-based  method prediction by running "evaluate_integrated.py".
 	title = {MMSMAPlus: a multi-view multi-scale multi-attention embedding model for protein function prediction},
 	year = {2023},
 	doi = {10.1093/bib/bbad201},
-	publisher = {Cold Spring Harbor Laboratory},
 	URL = {https://doi.org/10.1093/bib/bbad201},
 	journal = {Briefings in Bioinformatics}
 }
