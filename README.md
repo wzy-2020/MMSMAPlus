@@ -44,7 +44,7 @@ Integrate homology-based  method prediction by running "evaluate_integrated.py".
 ## Citing
 ```
 @article {
-	author = {Wang, Zhongyu, Deng, Zhaohong, Zhang, Wei, Lou, Qiongdan, Choi, Kup-Sze, Wei, Zhisheng, Wang, Lei and Wu, Jing},
+	author = {Wang Zhongyu, Deng Zhaohong, Zhang Wei, Lou Qiongdan, Choi Kup-Sze, Wei Zhisheng, Wang Lei and Wu Jing},
 	title = {MMSMAPlus: a multi-view multi-scale multi-attention embedding model for protein function prediction},
 	year = {2023},
 	doi = {10.1093/bib/bbad201},
